@@ -2,7 +2,18 @@
 
 public class Program {
     static void Main(string[] args) {
-        foreach (string hex in args) {
+        string[] input;
+
+        if (args.Length == 0) {
+            Console.WriteLine("Input hex:");
+            string? read = Console.ReadLine();
+
+            input = new string[] { read ?? "" };
+        } else {
+            input = args;
+        }
+
+        foreach (string hex in input) {
             string output = "";
 
             for (int i = 0; i < hex.Length; i += 2) {
