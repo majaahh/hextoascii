@@ -8,7 +8,7 @@ public class Program {
             Console.WriteLine("Input hex:");
             string? read = Console.ReadLine();
 
-            input = new string[] { read ?? "" };
+            input = (read ?? "").Split(' ', StringSplitOptions.RemoveEmptyEntries);
         } else {
             input = args;
         }
