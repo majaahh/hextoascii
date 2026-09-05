@@ -2,7 +2,7 @@
 
 public class Program {
     static void Main(string[] args) {
-        foreach (var hex in args) {
+        foreach (string hex in args) {
             string output = "";
 
             for (int i = 0; i < hex.Length; i += 2) {
