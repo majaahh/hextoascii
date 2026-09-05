@@ -9,9 +9,8 @@ public class Program {
             string? read = Console.ReadLine();
 
             input = (read ?? "").Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        } else {
+        } else
             input = args;
-        }
 
         foreach (string hex in input) {
             string output = "";
